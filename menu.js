@@ -1,6 +1,7 @@
 import { createInterface } from "node:readline/promises";
 
 import sayHelloWorld from "./features/1_greeting.js";
+import { main } from "./features/8_calculator.js";
 import isGenap from "./features/7_isGenap.js";
 
 async function menu() {
@@ -15,6 +16,7 @@ async function menu() {
         console.log("Silahkan pilih dari dibawah ini:")
         console.log("1. Hello World")
         console.log("7. Cek Ganjil Genap")
+        console.log("8. Simple Calculator");
         console.log("0. Exit")
 
         try {
@@ -32,6 +34,9 @@ async function menu() {
                 case "7":
                     const angka = await rl.question("Masukkan angka : ")
                     console.log(isGenap(angka))
+                    break;
+                case "8":
+                    await main(rl)
                     break;
                 default:
                     console.log("pilihan anda masih dalam tahap perkembangan\n")

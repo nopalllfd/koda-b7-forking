@@ -43,7 +43,8 @@ async function menu() {
                     luasSilinder(jariJari,tinggi)
                     break;
                 case "6":
-                    convertCtoK(30)
+                    const celcius = await rl.question("Masukkan suhu Celcius : ")
+                    console.log(convertCtoK(celcius))                  
                     break;
                 case "7":
                     const angka = await rl.question("Masukkan angka : ")

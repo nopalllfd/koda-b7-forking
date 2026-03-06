@@ -43,6 +43,4 @@ async function menu() {
     } while (!exit)
 }
 
-export default menu
-
 menu()

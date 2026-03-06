@@ -1,19 +1,20 @@
-import menu from '../menu.js'
-
 const calculator = (num1, num2, operator) => {
   let result;
+
+  let number1 = Number(num1)
+  let number2 = Number(num2)
   switch (operator) {
     case '+':
-      result = Number(num1) + Number(num2)
+      result = number1 + number2
       break;
     case '-':
-      result = Number(num1) - Number(num2)
+      result = number1 - number2
       break;
     case '*':
-      result = Number(num1) * Number(num2)
+      result = number1 * number2
       break;
     case '/':
-      result = Number(num1) / Number(num2)
+      result = number1 / number2
       break;
     default:
       throw 'Invalid Operator!'

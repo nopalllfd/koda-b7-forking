@@ -38,9 +38,10 @@ async function menu() {
                     sayHelloWorld()
                     break;
                 case "4":
-                    const jariJari = await rl.question("Masukkan angka : ")
-                    const tinggi = await rl.question("Masukkan angka : ")
+                    const jariJari = await rl.question("Masukkan jari jari : ")
+                    const tinggi = await rl.question("Masukkan tinggi : ")
                     luasSilinder(jariJari,tinggi)
+                    break;
                 case "6":
                     convertCtoK(30)
                     break;
